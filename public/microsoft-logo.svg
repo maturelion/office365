@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="24" viewBox="0 0 108 24">
+  <g fill="none">
+    <rect width="10" height="10" fill="#f25022"/>
+    <rect width="10" height="10" x="11" fill="#7fba00"/>
+    <rect width="10" height="10" y="11" fill="#00a4ef"/>
+    <rect width="10" height="10" x="11" y="11" fill="#ffb900"/>
+    <text fill="#737373" font-family="Segoe UI, sans-serif" font-size="15" font-weight="600">
+      <tspan x="26" y="17">Microsoft</tspan>
+    </text>
+  </g>
+</svg>

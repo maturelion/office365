@@ -1,0 +1,324 @@
+/* Login Page Styles - Pixel Perfect Office 365 */
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 440px;
+}
+
+/* Login Card - Exact Office 365 specs */
+.loginCard {
+    background-color: var(--ms-card-bg);
+    padding: 24px 44px 44px 44px;
+    width: 440px;
+    min-height: 338px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    position: relative;
+}
+
+.logoContainer {
+    margin-bottom: 0;
+}
+
+/* Microsoft Logo */
+.logo {
+    width: 108px;
+    height: 24px;
+}
+
+/* Heading - Exact "Sign in" styling */
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--ms-primary-text);
+    margin: 16px 0 12px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Email Input Container */
+.inputContainer {
+    margin-bottom: 16px;
+}
+
+/* Email Input Field - Exact Office 365 styling */
+.input {
+    width: 100%;
+    height: 36px;
+    padding: 6px 10px 6px 0;
+    font-size: 15px;
+    font-family: var(--font-family);
+    color: var(--ms-primary-text);
+    border: none;
+    border-bottom: 1px solid #8c8c8c;
+    outline: none;
+    background: transparent;
+}
+
+.input::placeholder {
+    color: var(--ms-placeholder-color);
+    font-size: 15px;
+}
+
+.input:focus {
+    border-bottom-width: 2px;
+    border-bottom-color: var(--ms-primary-blue);
+}
+
+/* Links Container */
+.linksContainer {
+    margin-bottom: 28px;
+}
+
+.linkText {
+    font-size: 13px;
+    color: var(--ms-primary-text);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.link {
+    color: var(--ms-link-color);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Button Container */
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+/* Next Button - Exact Office 365 specs */
+.nextButton {
+    background-color: var(--ms-primary-blue);
+    color: #ffffff;
+    border: none;
+    padding: 4px 12px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--font-family);
+    cursor: pointer;
+    min-width: 108px;
+    height: 32px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nextButton:hover {
+    background-color: #005da6;
+}
+
+.nextButton:active {
+    background-color: #004c8c;
+}
+
+/* Sign-in Options Box - Exact Office 365 styling */
+.signInOptions {
+    background-color: #f2f2f2;
+    border: 1px solid #8c8c8c;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    margin-top: 28px;
+    width: 100%;
+}
+
+.signInOptions:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-color: #666666;
+}
+
+.keyIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.optionsText {
+    font-size: 15px;
+    color: var(--ms-primary-text);
+}
+
+/* Footer - Exact Office 365 positioning */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.footerLink {
+    font-size: 12px;
+    color: var(--ms-secondary-text);
+    text-decoration: none;
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+    color: var(--ms-primary-text);
+}
+
+.moreOptions {
+    font-size: 12px;
+    color: var(--ms-secondary-text);
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+.moreOptions:hover {
+    color: var(--ms-primary-text);
+}
+
+/* ============================================
+   PASSWORD STEP STYLES
+   ============================================ */
+
+/* Back Button - Top left of card */
+.backButton {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.backButton:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Email Pill - Shows user email */
+.emailPill {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    padding: 4px 12px;
+    margin-bottom: 16px;
+}
+
+.emailText {
+    font-size: 13px;
+    color: var(--ms-primary-text);
+}
+
+/* Password Input Container */
+.passwordInputContainer {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+/* Password Input Field - Box style with border */
+.passwordInput {
+    width: 100%;
+    height: 36px;
+    padding: 6px 40px 6px 12px;
+    font-size: 15px;
+    font-family: var(--font-family);
+    color: var(--ms-primary-text);
+    border: 1px solid #666666;
+    outline: none;
+    background: transparent;
+    border-radius: 0;
+}
+
+.passwordInput::placeholder {
+    color: var(--ms-placeholder-color);
+    font-size: 15px;
+}
+
+.passwordInput:focus {
+    border-color: var(--ms-primary-blue);
+    border-width: 2px;
+    padding: 5px 39px 5px 11px;
+}
+
+/* Show Password Toggle Button */
+.showPasswordButton {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.showPasswordButton:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Sign In Button - Same as Next button */
+.signInButton {
+    background-color: var(--ms-primary-blue);
+    color: #ffffff;
+    border: none;
+    padding: 4px 12px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--font-family);
+    cursor: pointer;
+    min-width: 108px;
+    height: 32px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signInButton:hover {
+    background-color: #005da6;
+}
+
+.signInButton:active {
+    background-color: #004c8c;
+}
+
+/* Error Message - Exact Microsoft design */
+.errorMessage {
+    color: #e81123;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-weight: 400;
+}

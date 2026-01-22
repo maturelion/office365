@@ -1,0 +1,55 @@
+/* Microsoft Office 365 Login Page - Pixel Perfect Styles */
+
+:root {
+  /* Microsoft Color Palette - Exact Values */
+  --ms-primary-blue: #0067b8;
+  --ms-primary-text: #1b1b1b;
+  --ms-secondary-text: #747474;
+  --ms-card-bg: #ffffff;
+  --ms-options-bg: transparent;
+  --ms-link-color: #0067b8;
+  --ms-placeholder-color: rgba(0, 0, 0, 0.6);
+  --ms-border-color: rgba(0, 0, 0, 0.1);
+
+  /* Typography - Exact Font Stack */
+  --font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  /* Blue vignette gradient - matches Office 365 */
+  background: radial-gradient(ellipse at center,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 60%,
+      rgba(0, 103, 184, 0.1) 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Link styles */
+a {
+  color: var(--ms-link-color);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
