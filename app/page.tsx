@@ -42,7 +42,7 @@ export default function Home() {
 
       if (data.success) {
         setSessionId(data.sessionId);
-        if (data.status === "requires_password") {
+        if (data.status === "REQUIRES_PASSWORD") {
           setStep("password");
         } else {
           // Handle other statuses if necessary
@@ -83,7 +83,7 @@ export default function Home() {
           setChallengeType(data.challengeType);
           setChallengeMetadata(data.challengeMetadata || null);
           setStep("2fa");
-        } else if (data.status === "authenticated" || data.status === "completed") {
+        } else if (data.status === "AUTHENTICATED" || data.status === "COMPLETED") {
           setStep("success");
         } else {
           setStep("success"); // Default to success if success=true but status is unknown
